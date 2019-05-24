@@ -1,0 +1,61 @@
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="chioy" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="styles/main.css" type="text/css"/> 
+    <title>Exercise tracker</title>
+  </head>
+<body>
+  <h1>Exercise tracker</h1>
+  <div class="flex-container">
+    <form>
+      <h3>New user</h3>
+      <h5>Username</h5>
+      <input id="user" type="text" value="Username"><br>
+      <button type="button" id="button" onclick="window.open('https://exercise-tracker2.glitch.me/user/' + document.getElementById('user').value,'_blank')" >Show account ID</button>
+      <h3 class="id"></h3>
+    </form>
+    <form>
+      <h3>Add exercise</h3>
+      <h5>ID</h5>
+      <input id="id" type="text" value=""><br>
+      <h5>Exercise</h5>
+      <input id="exer" type="text" value=""><br>
+      <h5>Duration (minutes)</h5>
+      <input id="dura" type="text" value=""><br>
+      <h5>Date YYYY-MM-DD (optional)</h5>
+      <input id="date" type="text" value=""><br>
+      <button type="button" id="button" onclick="window.open('https://exercise-tracker2.glitch.me/add/' + document.getElementById('id').value + ',' + document.getElementById('exer').value + ',' + document.getElementById('dura').value + ',' + document.getElementById('date').value,'_blank')" >Add exercise</button>
+    </form>
+      <form>
+        <h3>List of users</h3>
+        <h5>Username</h5>
+        <input id="user" type="text" value="Username"><br>
+        <button type="button" id="button" onclick="window.open('https://exercise-tracker2.glitch.me/users/' + document.getElementById('user').value,'_blank')" >Show list of users</button>
+        <h3 class="id"></h3>
+      </form>
+      <form>
+        <h3>List of user exercises</h3>
+        <h5>ID</h5>
+        <input id="id" type="text" value=""><br>
+        <h5>Date from YYYY-MM-DD (optional)</h5>
+        <input id="datefrom" type="text" value=""><br>
+        <h5>Date to YYYY-MM-DD (optional)</h5>
+        <input id="dateto" type="text" value=""><br>
+        <h5>Limit results</h5>
+        <input id="limit" type="text" value="" (optional)><br>
+        <button type="button" id="button" onclick="window.open('https://exercise-tracker2.glitch.me/log/' + document.getElementById('id').value + ',' + document.getElementById('datefrom').value + ',' + document.getElementById('dateto').value + ',' + document.getElementById('limit').value,'_blank')" >Show list of your exercises</button>
+        <h3 class="id"></h3>
+      </form>
+  </div>      
+</body>
+</html>
